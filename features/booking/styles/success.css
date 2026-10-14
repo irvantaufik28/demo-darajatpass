@@ -38,7 +38,7 @@
   --forest: #173f33;
   --forest-soft: #245440;
   --cream: #f4f0e6;
-  --gold: #e5b23e;
+  --gold: #fa7006;
   --line: #d4d9cc;
   --surface: #fffdf7;
   background: #f7f4ec;
@@ -116,14 +116,14 @@
   height: 48px;
   margin-bottom: 22px;
   border-radius: 3px;
-  background: #e5b23e;
+  background: #fa7006;
   color: #173f33;
 }
 .payment-demo-modal h2 { margin: 0 0 12px; font-size: 28px; line-height: 1.15; }
 .payment-demo-modal p { margin: 0 0 26px; color: #59675e; font-size: 14px; line-height: 1.7; }
 .payment-demo-modal .button { width: 100%; min-height: 46px; border-radius: 3px; background: #173f33; color: white; }
 .payment-demo-modal .button:hover { background: #245440; }
-.payment-demo-modal .button:focus-visible { outline: 3px solid #e5b23e; outline-offset: 3px; }
+.payment-demo-modal .button:focus-visible { outline: 3px solid #fa7006; outline-offset: 3px; }
 
 @media (max-width: 1100px) {
   .payment-success-page .payment-success-main { width: min(100% - 48px, 1280px); padding-top: 118px; }

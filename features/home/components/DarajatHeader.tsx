@@ -59,10 +59,10 @@ export function DarajatHeader({ solid = false, bookingHref }: { interior?: boole
   return <header className={`dp-header${solid || scrolled ? " is-scrolled" : ""}${open ? " is-open" : ""}`} ref={header}>
     <div className="dp-header-inner">
       <div className="dp-header-top">
-        <div className="dp-header-language"><LanguageSwitcher /></div>
+        <span className="dp-header-spacer" aria-hidden="true" />
         <DarajatWordmark />
         <div className="dp-header-actions">
-          <a className="dp-reservation-link" href="/reservation-check">{copy.reservation}</a>
+          <div className="dp-header-language"><LanguageSwitcher /></div>
           <a className="dp-button dp-gold dp-header-book" href={bookingLink}>{copy.book}</a>
           <button className="dp-menu-toggle" ref={menuButton} type="button" aria-expanded={open} aria-controls="darajat-mobile-nav" onClick={() => setOpen(!open)}>
             {open ? <X size={20} /> : <Menu size={20} />} {open ? copy.close : copy.menu}
@@ -71,11 +71,12 @@ export function DarajatHeader({ solid = false, bookingHref }: { interior?: boole
       </div>
       <nav className="dp-desktop-nav" aria-label={lang === "id" ? "Navigasi utama" : "Main navigation"}>
         {copy.nav.map((label, i) => <Link key={label} href={links[i]}>{label}</Link>)}
+        <Link href="/reservation-check">{copy.reservation}</Link>
       </nav>
     </div>
     {open && <nav className="dp-mobile-nav" id="darajat-mobile-nav" aria-label={lang === "id" ? "Navigasi seluler" : "Mobile navigation"}>
       {copy.nav.map((label, i) => <Link key={label} href={links[i]} onClick={() => setOpen(false)}>{label}</Link>)}
-      <a href="/reservation-check">{copy.reservation}</a>
+      <Link href="/reservation-check" onClick={() => setOpen(false)}>{copy.reservation}</Link>
       <a className="dp-button dp-gold" href={bookingLink} onClick={() => setOpen(false)}>{copy.book}</a>
     </nav>}
   </header>;

@@ -17,12 +17,6 @@ import { darajatMedia } from "../constants/darajat-media";
 import en from "../locales/en.json";
 import id from "../locales/id.json";
 
-const activityImages = [
-  "/images/hero/darajat-pass-hero-02.png",
-  "/images/tourism/atv-darajat.webp",
-  "/images/hero/darajat-pass-hero-03.png",
-];
-
 const amenityIcons = [Wifi, SquareParking, MoonStar, House, ShowerHead, BriefcaseMedical];
 
 function jakartaToday() {
@@ -40,7 +34,7 @@ export default function Home() {
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [adults, setAdults] = useState(2);
-  const [children, setChildren] = useState(2);
+  const [children, setChildren] = useState(0);
   const [roomTypeId, setRoomTypeId] = useState("all");
   const [roomTypes, setRoomTypes] = useState<PublicRoom[]>([]);
   const [featuredRooms, setFeaturedRooms] = useState<FeaturedRoom[]>([]);
@@ -146,6 +140,10 @@ export default function Home() {
           <div className="hero-shade" />
           <div className="dp-hero-copy dp-container">
             <h1>Darajat Pass</h1>
+            <p className="dp-hero-tagline">
+              <span>Temukan suasana pegunungan yang menyegarkan.</span>
+              <span>Nikmati waktu berkualitas bersama orang-orang terdekat.</span>
+            </p>
           </div>
           <section className="booking-section" id="booking" aria-label={t("booking.ariaLabel")}>
             <div className="dp-container dp-booking-panel">
@@ -232,18 +230,31 @@ export default function Home() {
             <div><p className="dp-kicker">{copy.activityLabel}</p><h2>{copy.activityTitle}</h2></div>
             <p className="dp-body">{copy.activityIntro}</p>
           </div>
-          <div className="dp-activity-showcase">
-            <figure className="dp-activity-feature">
-              <Image src="/images/darajat-welcome.webp" alt={copy.activityFeatureAlt} fill sizes="(max-width: 780px) 100vw, 42vw" />
-              <figcaption><span>{copy.activityFeatureLabel}</span><strong>{copy.activityFeatureTitle}</strong><p>{copy.activityFeatureBody}</p></figcaption>
+          <div className="dp-experience-showcase">
+            <figure className="dp-experience-feature">
+              <Image src="/images/outdoor-highland-dining.jpg" alt={t("experiences.feature.title")} fill sizes="(max-width: 780px) 100vw, 40vw" />
+              <div className="dp-experience-shade" />
+              <figcaption><span>{t("experiences.feature.badge")}</span><h3>{t("experiences.feature.title")}</h3><p>{t("experiences.feature.detail")}</p></figcaption>
             </figure>
-            <div className="dp-activity-cards">{copy.activities.map((activity, i) => <article className={i === 0 ? "is-featured" : ""} key={activity.tag}>
-              <div className="dp-activity-card-photo"><Image src={activityImages[i]} alt={activity.imageAlt} fill sizes="(max-width: 620px) 80px, 110px" /></div>
-              <p className="dp-kicker">{activity.tag}</p>
-              <h3>{activity.title}</h3>
-              <p className="dp-body">{activity.body}</p>
-              <span className="dp-activity-cta">{activity.action}<ArrowRight size={18} /></span>
-            </article>)}</div>
+            <div className="dp-experience-list">
+              <Link className="dp-experience-card is-wide" href="/experiences/roast-goat">
+                <div className="dp-experience-card-main"><p className="dp-experience-label">{t("experiences.roastGoat.eyebrow")}</p><h3>{t("experiences.roastGoat.title")}</h3><p>{t("experiences.roastGoat.detail")}</p></div>
+                <div className="dp-experience-thumb"><Image src="/images/kambing-guling.webp" alt={t("experiences.roastGoat.title")} fill sizes="120px" /></div>
+                <div className="dp-experience-card-footer"><span><UsersRound size={18} />{t("experiences.roastGoat.meta")}</span><strong>{t("experiences.viewOptions")}<ArrowRight size={18} /></strong></div>
+              </Link>
+              <div className="dp-experience-card-row">
+                <Link className="dp-experience-card" href="/experiences/bbq-grill">
+                  <div className="dp-experience-card-main"><p className="dp-experience-label">{t("experiences.bbq.badge")}</p><h3>{t("experiences.bbq.title")}</h3><p>{t("experiences.bbq.detail")}</p></div>
+                  <div className="dp-experience-thumb"><Image src="/images/bbq-grill.webp" alt={t("experiences.bbq.title")} fill sizes="96px" /></div>
+                  <strong>{t("experiences.viewOptions")}<ArrowRight size={18} /></strong>
+                </Link>
+                <Link className="dp-experience-card is-birthday" href="/experiences/birthday-celebration">
+                  <div className="dp-experience-card-main"><p className="dp-experience-label">{t("experiences.birthday.badge")}</p><h3>{t("experiences.birthday.title")}</h3><p>{t("experiences.birthday.detail")}</p></div>
+                  <div className="dp-experience-thumb"><Image src="/images/birthday-room-decor.webp" alt={t("experiences.birthday.title")} fill sizes="96px" /></div>
+                  <strong>{t("experiences.viewOptions")}<ArrowRight size={18} /></strong>
+                </Link>
+              </div>
+            </div>
           </div>
           <div className="dp-amenities" id="facilities"><div className="dp-amenities-heading"><p>{copy.amenitiesLabel}</p><Link href="/facilities" className="dp-amenities-link">{copy.amenitiesLink}<ArrowRight size={17} aria-hidden="true" /></Link></div><ul>{copy.amenities.map((item, index) => {
             const Icon = amenityIcons[index];
