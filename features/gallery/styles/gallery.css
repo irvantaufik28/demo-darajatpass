@@ -45,6 +45,7 @@
 .resort-gallery-eyebrow { display: inline-flex; align-items: center; gap: 7px; color: #beedd5; font-size: 11px; font-weight: 400; letter-spacing: .1em; }
 .resort-gallery-experience-copy .resort-gallery-eyebrow { padding: 6px 12px; border-radius: 100px; background: #ffffff1a; backdrop-filter: blur(8px); }
 .resort-gallery-experience-copy h2 { margin: 16px 0; font-size: 40px; font-weight: 300; line-height: 1.2; }
+.dp-home .resort-gallery-experience-copy h2 { color: #fff; }
 .resort-gallery-experience-copy p { margin-bottom: 28px; color: #ffffffd9; font-size: 18px; line-height: 1.6; }
 .resort-gallery-experience-copy > div { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
 .resort-gallery-experience-copy > div > span { color: #ffffffb3; font-size: 11px; }
@@ -59,6 +60,7 @@
 .resort-gallery-booking { margin-bottom: 96px; }
 .resort-gallery-booking > div { position: relative; overflow: hidden; padding: 64px; border-radius: 16px; background: radial-gradient(ellipse at top right, #a3d1ba1a, transparent 60%), radial-gradient(ellipse at bottom left, #c29b381a, transparent 60%), var(--forest); box-shadow: 0 16px 32px -6px #1e25211f; color: #fff; text-align: center; }
 .resort-gallery-booking h2 { max-width: 670px; margin: 15px auto; font-size: 40px; font-weight: 300; line-height: 1.2; letter-spacing: -.01em; }
+.dp-home .resort-gallery-booking h2 { color: #fff; }
 .resort-gallery-booking p { max-width: 570px; margin: 0 auto 32px; color: #ffffffcc; font-size: 18px; line-height: 1.6; }
 .resort-gallery-booking > div > div { display: flex; align-items: center; justify-content: center; gap: 16px; }
 .resort-gallery-outline-button { padding: 13px 28px; border-color: #ffffff66; color: #fff; background: transparent; }

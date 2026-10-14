@@ -17,7 +17,7 @@ export function DarajatWordmark() {
   );
 }
 
-export function DarajatHeader({ interior = false, solid = false, bookingHref }: { interior?: boolean; solid?: boolean; bookingHref?: string }) {
+export function DarajatHeader({ solid = false, bookingHref }: { interior?: boolean; solid?: boolean; bookingHref?: string }) {
   const [lang] = useLang();
   const copy = darajatCopy[lang];
   const [open, setOpen] = useState(false);
@@ -25,7 +25,7 @@ export function DarajatHeader({ interior = false, solid = false, bookingHref }: 
   const menuButton = useRef<HTMLButtonElement>(null);
   const header = useRef<HTMLElement>(null);
   const links = ["/", "/rooms", "/facilities", "/contact", "/gallery"];
-  const bookingLink = bookingHref ?? (interior ? "/#booking" : "#booking");
+  const bookingLink = bookingHref ?? "/rooms";
 
   useEffect(() => {
     if (solid) return;

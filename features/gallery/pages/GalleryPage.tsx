@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { ArrowRight, ArrowUpRight, CalendarDays, Flame, Waves, ZoomIn } from "lucide-react";
+import { ArrowRight, ArrowUpRight, CalendarDays, Mountain, Waves, ZoomIn } from "lucide-react";
 import { DarajatFooter, DarajatHeader } from "@/features/home/components/DarajatHeader";
 import { galleryCategories, galleryPhotos, type GalleryCategoryId, type GalleryPhoto } from "@/features/gallery/constants/gallery-data";
 import GalleryLightbox from "../components/GalleryLightbox";
@@ -12,18 +12,18 @@ import id from "../locales/id.json";
 import "../styles/gallery.css";
 
 const photoKeyById: Record<string, string> = {
-  "thermal-pools": "thermalPools",
-  "vip-suite": "vipSuite",
-  "resort-entrance": "resortEntrance",
-  "family-suite": "familySuite",
-  "tea-landscape": "teaLandscape",
-  "restaurant": "restaurant",
-  "family-garden": "familyGarden",
-  "standard-room": "standardRoom",
-  "warm-pool": "warmPool",
-  "roast-goat": "roastGoat",
-  "satay-grill": "satayGrill",
-  "celebration": "celebration",
+  waterpark: "waterpark",
+  "premium-room": "premiumRoom",
+  "darajat-hillside": "darajatHillside",
+  "room-terrace": "roomTerrace",
+  "poolside-hotel": "poolsideHotel",
+  "twin-room": "twinRoom",
+  "resort-gardens": "resortGardens",
+  "double-room": "doubleRoom",
+  "night-pool": "nightPool",
+  "rainbow-slide": "rainbowSlide",
+  "flying-fox": "flyingFox",
+  atv: "atv",
 };
 
 export default function GalleryPage() {
@@ -60,7 +60,7 @@ export default function GalleryPage() {
         <section className="resort-gallery-intro"><div className="resort-gallery-container"><h1>{t("intro.title")}</h1><p>{t("intro.description")}</p></div></section>
         <section className="resort-gallery-container resort-gallery-featured" aria-label={t("featured.ariaLabel")}>{photoCard(localizedPhotos[0], "lead", t("featured.leadBadge"))}<div className="resort-gallery-stack">{photoCard(localizedPhotos[1], "stacked")}{photoCard(localizedPhotos[2], "stacked", t("featured.stackedBadge"))}</div></section>
         <section className="resort-gallery-container resort-gallery-browse" aria-label={t("browse.ariaLabel")}><div className="resort-gallery-filters" role="group" aria-label={t("browse.filtersGroupLabel")}>{localizedCategories.map((item) => <button type="button" key={item.id} aria-pressed={category === item.id} aria-controls="resort-gallery-grid" className={category === item.id ? "is-active" : ""} onClick={() => setCategory(item.id)}>{item.label}</button>)}</div><p className="sr-only" role="status">{t("browse.status", { count: visiblePhotos.length, category: localizedCategories.find((item) => item.id === category)?.label ?? "" })}</p><div className="resort-gallery-grid" id="resort-gallery-grid">{visiblePhotos.map((photo) => photoCard(photo))}</div></section>
-        <section className="resort-gallery-container resort-gallery-experience"><div><Image src="/images/gallery-experience.jpg" alt={t("experienceSection.imageAlt")} fill sizes="(max-width: 767px) 100vw, 1184px" /><div className="resort-gallery-experience-shade" /><div className="resort-gallery-experience-copy"><span className="resort-gallery-eyebrow"><Flame size={16} /> {t("experienceSection.eyebrow")}</span><h2>{t("experienceSection.title")}</h2><p>{t("experienceSection.description")}</p><div><a className="button resort-gallery-light-button" href="/#experiences">{t("experienceSection.button")} <ArrowRight size={18} /></a><span>{t("experienceSection.note")}</span></div></div></div></section>
+        <section className="resort-gallery-container resort-gallery-experience"><div><Image src="/images/tourism/rainbow-slide-darajat.webp" alt={t("experienceSection.imageAlt")} fill sizes="(max-width: 767px) 100vw, 1184px" /><div className="resort-gallery-experience-shade" /><div className="resort-gallery-experience-copy"><span className="resort-gallery-eyebrow"><Mountain size={16} /> {t("experienceSection.eyebrow")}</span><h2>{t("experienceSection.title")}</h2><p>{t("experienceSection.description")}</p><div><a className="button resort-gallery-light-button" href="/#experiences">{t("experienceSection.button")} <ArrowRight size={18} /></a><span>{t("experienceSection.note")}</span></div></div></div></section>
         <section className="resort-gallery-container resort-gallery-culinary"><div className="resort-gallery-section-heading"><div><span>{t("culinarySection.eyebrow")}</span><h2>{t("culinarySection.title")}</h2></div><p>{t("culinarySection.description")}</p></div><div className="resort-gallery-culinary-grid">{photoCard(localizedPhotos[9], "culinary", t("culinarySection.leadBadge"))}<div className="resort-gallery-stack">{photoCard(localizedPhotos[10], "stacked", t("culinarySection.bbqBadge"))}{photoCard(localizedPhotos[11], "stacked", t("culinarySection.celebrationBadge"))}</div></div></section>
         <section className="resort-gallery-container resort-gallery-booking"><div><span className="resort-gallery-eyebrow">{t("bookingSection.eyebrow")}</span><h2>{t("bookingSection.title")}</h2><p>{t("bookingSection.description")}</p><div><a className="button resort-gallery-light-button" href="/rooms#availability"><CalendarDays size={18} /> {t("bookingSection.checkAvailability")}</a><a className="button resort-gallery-outline-button" href="/rooms">{t("bookingSection.viewRooms")}</a></div></div></section>
       </main>

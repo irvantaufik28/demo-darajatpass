@@ -1,12 +1,12 @@
 {
   "intro": {
-    "title": "Resort Elegance & the Quiet Warmth of Darajat",
-    "description": "Explore the rooms, warm pools, hotel areas, and the many moments you can enjoy during your stay in Darajat."
+    "title": "Darajat Pass Gallery",
+    "description": "See the hotel, rooms, pools, scenery, and activities at Darajat Pass."
   },
   "featured": {
     "ariaLabel": "Featured resort photos",
-    "leadBadge": "Natural Warm Pool",
-    "stackedBadge": "Darajat Atmosphere",
+    "leadBadge": "Pools & Waterpark",
+    "stackedBadge": "Darajat Scenery",
     "leadSmall": "TRAVEL HIGHLIGHT"
   },
   "browse": {
@@ -15,112 +15,111 @@
     "status": "{count} photos shown for the {category} category."
   },
   "zoomLabel": "Enlarge photo {title}",
-  "culinarySmall": "Resort Signature Menu",
+  "culinarySmall": "OUTDOOR ACTIVITIES",
   "categories": {
     "all": "All",
     "rooms": "Rooms",
     "pools": "Warm Pools",
     "resort": "Hotel Area",
-    "dining": "Dining",
-    "experiences": "Family & Experience",
+    "experiences": "Activities",
     "landscape": "Scenery"
   },
   "photos": {
-    "thermalPools": {
+    "waterpark": {
       "categoryLabel": "Warm Pools",
-      "title": "Natural Mountain Warm Pool",
-      "caption": "The Sensation of a Warm Soak at Garut's Heights",
-      "alt": "A guest enjoying the warm pool in front of the villa with a mountain panorama"
+      "title": "Darajat Pass Pools and Waterpark",
+      "caption": "Darajat Pass Pools and Waterpark",
+      "alt": "Aerial view of the Darajat Pass pools and waterpark"
     },
-    "vipSuite": {
-      "categoryLabel": "Rooms & Suites",
-      "title": "VIP Suite Panoramic Balcony",
-      "caption": "VIP Suite Panoramic Balcony",
-      "alt": "The warm wooden interior of a VIP Suite with a balcony facing the hills"
+    "premiumRoom": {
+      "categoryLabel": "Rooms",
+      "title": "Premium Room Interior",
+      "caption": "Darajat Pass Premium Room",
+      "alt": "Darajat Pass premium room with a sitting area and beds"
     },
-    "resortEntrance": {
-      "categoryLabel": "Hotel Area",
-      "title": "Darajat Morning Atmosphere & Resort Area",
-      "caption": "Lobby & Mountain Entrance Gate",
-      "alt": "The entrance and parking area of the resort on the slopes of the Darajat mountains"
-    },
-    "familySuite": {
-      "categoryLabel": "Rooms & Suites",
-      "title": "Family Suite Bunk Bed Wood Interior",
-      "caption": "Family Suite with Bunk Beds",
-      "description": "Capacity 4–6 People • Valley View",
-      "alt": "A Family Suite with bunk beds and a wooden interior"
-    },
-    "teaLandscape": {
+    "darajatHillside": {
       "categoryLabel": "Scenery",
-      "title": "Tea Gardens & Resort Spread on the Darajat Slopes",
-      "caption": "Garut Tea Plantation Landscape",
-      "description": "A Cool Elevation of 1,600 meters above sea level",
-      "alt": "A panorama of tea plantations and the resort in the Garut highlands"
+      "title": "Darajat Pass Landscape",
+      "caption": "Darajat Mountain Scenery",
+      "alt": "Green hills and the Darajat Pass sign"
     },
-    "restaurant": {
-      "categoryLabel": "Dining",
-      "title": "Valley-View Restaurant & Traditional Breakfast",
-      "caption": "Pasirwangi Restaurant & Buffet",
-      "description": "Signature Sundanese Menu & Warm Dishes",
-      "alt": "A restaurant with traditional breakfast dishes and a valley view"
+    "roomTerrace": {
+      "categoryLabel": "Rooms",
+      "title": "Premium Room Terrace",
+      "caption": "Premium Room Terrace",
+      "description": "A place to relax outside the room",
+      "alt": "Terrace of a Darajat Pass premium room"
     },
-    "familyGarden": {
-      "categoryLabel": "Family & Experience",
-      "title": "Children's Playground & Natural Wooden Swing",
-      "caption": "Grass Garden & Wooden Swing",
-      "description": "A Child-Friendly Open Green Space",
-      "alt": "A green garden and wooden swing for playing together with family"
+    "poolsideHotel": {
+      "categoryLabel": "Hotel Area",
+      "title": "Hotel and Pool Area",
+      "caption": "Hotel by the Pool",
+      "description": "A hotel area for enjoying the Darajat atmosphere",
+      "alt": "Darajat Pass hotel building and seating by the pool"
     },
-    "standardRoom": {
-      "categoryLabel": "Rooms & Suites",
-      "title": "Standard Room with Twin Queen Beds",
-      "caption": "Standard Twin Queen Room",
-      "description": "Warm Wooden Floors & Soft Blankets",
-      "alt": "A Standard Room with two queen beds and wooden floors"
+    "twinRoom": {
+      "categoryLabel": "Rooms",
+      "title": "Darajat Pass Twin Room",
+      "caption": "Room with Two Beds",
+      "description": "Twin room interior with warm lighting",
+      "alt": "Darajat Pass room with two separate beds"
     },
-    "warmPool": {
+    "resortGardens": {
+      "categoryLabel": "Scenery",
+      "title": "Gardens on the Darajat Hillside",
+      "caption": "Hillside Gardens and Buildings",
+      "description": "An elevated view of the resort grounds",
+      "alt": "Terraced gardens and Darajat Pass buildings on a hillside"
+    },
+    "doubleRoom": {
+      "categoryLabel": "Rooms",
+      "title": "Darajat Pass Double Room",
+      "caption": "Room with a Double Bed",
+      "description": "A comfortable place to rest",
+      "alt": "Darajat Pass room with a double bed and a large window"
+    },
+    "nightPool": {
       "categoryLabel": "Warm Pools",
-      "title": "24-Hour Natural Warm Pool",
-      "caption": "Natural Sulfur Spring Soaking Pool",
-      "description": "Stable Warm Temperature Without Chlorine",
-      "alt": "A warm soaking pool with natural steam and a valley panorama"
+      "title": "Darajat Pool at Night",
+      "caption": "Pool Atmosphere at Night",
+      "description": "A view of the pool after sunset",
+      "alt": "Darajat Pass pool with night lighting"
     },
-    "roastGoat": {
-      "categoryLabel": "Dining",
-      "title": "Traditional Whole Darajat Roast Goat",
-      "caption": "Savory Spiced Roast Goat",
-      "description": "Prepared fresh on an open patio with the atmosphere of a mountain evening bonfire.",
-      "alt": "Traditional roast goat prepared by a chef in an open grilling area"
+    "rainbowSlide": {
+      "categoryLabel": "Activities",
+      "title": "Darajat Pass Rainbow Slide",
+      "caption": "Ride the Rainbow Slide",
+      "description": "A colorful slide in the Darajat gardens",
+      "alt": "Colorful Rainbow Slide at Darajat Pass"
     },
-    "satayGrill": {
-      "categoryLabel": "Dining",
-      "title": "Charcoal-Grilled Satay & Pasirwangi Sambal",
-      "caption": "Charcoal-Grilled Chicken & Meat Satay",
-      "alt": "Chicken and meat satay grilled over charcoal"
+    "flyingFox": {
+      "categoryLabel": "Activities",
+      "title": "Darajat Pass Flying Fox",
+      "caption": "Try the Flying Fox",
+      "alt": "A visitor riding the flying fox above the Darajat Pass grounds"
     },
-    "celebration": {
-      "categoryLabel": "Family & Experience",
-      "title": "Romantic & Birthday Room Decoration",
-      "caption": "Special Room Decoration Package",
-      "alt": "Celebration decoration in a hotel room with warm lighting"
+    "atv": {
+      "categoryLabel": "Activities",
+      "title": "Darajat Pass ATV",
+      "caption": "Explore Darajat by ATV",
+      "alt": "A visitor riding an ATV in the Darajat area"
     }
   },
   "culinarySection": {
-    "leadBadge": "Live Cooking",
-    "bbqBadge": "BBQ & Grill",
-    "celebrationBadge": "Celebration",
-    "eyebrow": "FLAVORS & SPECIAL MOMENTS",
-    "title": "The Warmth of Cuisine & Family Celebrations",
-    "description": "From the savory flavor of traditional roast goat to sweet surprise decorations inside your room."
+    "leadBadge": "Rainbow Slide",
+    "bbqBadge": "Flying Fox",
+    "celebrationBadge": "ATV",
+    "eyebrow": "EXPLORE DARAJAT",
+    "title": "Activities at Darajat Pass",
+    "description": "See the Rainbow Slide, Flying Fox, and ATV rides that add to your Darajat getaway."
   },
   "experienceSection": {
     "eyebrow": "DARAJAT PASS EXPERIENCES",
     "title": "Moments Worth Remembering",
-    "description": "Complete your family time with a choice of dining and celebration experiences during your stay amid the cool air of Pasirwangi.",
+    "description": "Enjoy the rides and mountain setting with your family during your time at Darajat Pass.",
     "button": "View Experiences",
-    "note": "Roast Goat & Live BBQ Available",
-    "imageAlt": "A family BBQ meal in the open area of the resort"
+    "note": "Rainbow Slide, Flying Fox & ATV",
+    "imageAlt": "The colorful Rainbow Slide at Darajat Pass"
   },
   "bookingSection": {
     "eyebrow": "DIRECT RESERVATION",

@@ -1,12 +1,12 @@
 {
   "intro": {
-    "title": "Keanggunan Resor & Kehangatan Sunyi Darajat",
-    "description": "Jelajahi kamar, kolam air hangat, area hotel, dan berbagai momen yang bisa dinikmati selama menginap di Darajat."
+    "title": "Galeri Darajat Pass",
+    "description": "Lihat suasana hotel, kamar, kolam, pemandangan, dan aktivitas wisata di Darajat Pass."
   },
   "featured": {
     "ariaLabel": "Foto unggulan resor",
-    "leadBadge": "Kolam Air Hangat Alami",
-    "stackedBadge": "Suasana Darajat",
+    "leadBadge": "Kolam & Waterpark",
+    "stackedBadge": "Pemandangan Darajat",
     "leadSmall": "HIGHLIGHT WISATA"
   },
   "browse": {
@@ -15,112 +15,111 @@
     "status": "{count} foto ditampilkan untuk kategori {category}."
   },
   "zoomLabel": "Perbesar foto {title}",
-  "culinarySmall": "Menu Signature Resor",
+  "culinarySmall": "AKTIVITAS WISATA",
   "categories": {
     "all": "Semua",
     "rooms": "Kamar",
     "pools": "Kolam Air Hangat",
     "resort": "Area Hotel",
-    "dining": "Dining",
-    "experiences": "Family & Experience",
+    "experiences": "Aktivitas",
     "landscape": "Pemandangan"
   },
   "photos": {
-    "thermalPools": {
+    "waterpark": {
       "categoryLabel": "Kolam Air Hangat",
-      "title": "Kolam Air Hangat Alami Pegunungan",
-      "caption": "Sensasi Berendam Hangat di Ketinggian Garut",
-      "alt": "Tamu menikmati kolam air hangat di depan vila dengan panorama pegunungan"
+      "title": "Kolam dan Waterpark Darajat Pass",
+      "caption": "Kolam dan Waterpark Darajat Pass",
+      "alt": "Pemandangan dari atas kolam renang dan waterpark Darajat Pass"
     },
-    "vipSuite": {
-      "categoryLabel": "Kamar & Suite",
-      "title": "VIP Suite Panoramic Balcony",
-      "caption": "VIP Suite Panoramic Balcony",
-      "alt": "Interior VIP Suite berkayu hangat dengan balkon menghadap perbukitan"
+    "premiumRoom": {
+      "categoryLabel": "Kamar",
+      "title": "Interior Kamar Premium",
+      "caption": "Kamar Premium Darajat Pass",
+      "alt": "Interior kamar premium Darajat Pass dengan area duduk dan tempat tidur"
     },
-    "resortEntrance": {
-      "categoryLabel": "Area Hotel",
-      "title": "Suasana Pagi Darajat & Area Resor",
-      "caption": "Lobi & Gerbang Masuk Pegunungan",
-      "alt": "Pintu masuk dan area parkir resor di lereng pegunungan Darajat"
-    },
-    "familySuite": {
-      "categoryLabel": "Kamar & Suite",
-      "title": "Family Suite Bunk Bed Wood Interior",
-      "caption": "Family Suite dengan Bunk Bed",
-      "description": "Kapasitas 4–6 Orang • Pemandangan Lembah",
-      "alt": "Family Suite dengan ranjang bertingkat dan interior kayu"
-    },
-    "teaLandscape": {
+    "darajatHillside": {
       "categoryLabel": "Pemandangan",
-      "title": "Hamparan Kebun Teh & Resor di Lereng Darajat",
-      "caption": "Lansekap Perkebunan Teh Garut",
-      "description": "Ketinggian 1.600 mdpl yang Sejuk",
-      "alt": "Panorama perkebunan teh dan resor di dataran tinggi Garut"
+      "title": "Lanskap Darajat Pass",
+      "caption": "Lanskap Pegunungan Darajat",
+      "alt": "Area perbukitan hijau dan tulisan Darajat Pass"
     },
-    "restaurant": {
-      "categoryLabel": "Dining",
-      "title": "Restoran Pemandangan Lembah & Sarapan Tradisional",
-      "caption": "Restoran Pasirwangi & Buffet",
-      "description": "Menu Khas Sunda & Sajian Hangat",
-      "alt": "Restoran dengan hidangan sarapan tradisional dan pemandangan lembah"
+    "roomTerrace": {
+      "categoryLabel": "Kamar",
+      "title": "Teras Kamar Premium",
+      "caption": "Teras Kamar Premium",
+      "description": "Ruang untuk bersantai di luar kamar",
+      "alt": "Teras kamar premium Darajat Pass"
     },
-    "familyGarden": {
-      "categoryLabel": "Family & Experience",
-      "title": "Taman Bermain Anak & Ayunan Kayu Alami",
-      "caption": "Taman Rumput & Ayunan Kayu",
-      "description": "Ruang Terbuka Hijau yang Ramah Anak",
-      "alt": "Taman hijau dan ayunan kayu untuk bermain bersama keluarga"
+    "poolsideHotel": {
+      "categoryLabel": "Area Hotel",
+      "title": "Hotel dan Area Kolam",
+      "caption": "Suasana Hotel di Tepi Kolam",
+      "description": "Area hotel untuk menikmati suasana Darajat",
+      "alt": "Bangunan hotel dan area duduk di tepi kolam Darajat Pass"
     },
-    "standardRoom": {
-      "categoryLabel": "Kamar & Suite",
-      "title": "Kamar Standard dengan Twin Queen Bed",
-      "caption": "Standard Twin Queen Room",
-      "description": "Lantai Kayu Hangat & Selimut Lembut",
-      "alt": "Kamar Standard dengan dua tempat tidur queen dan lantai kayu"
+    "twinRoom": {
+      "categoryLabel": "Kamar",
+      "title": "Kamar Twin Darajat Pass",
+      "caption": "Kamar dengan Dua Tempat Tidur",
+      "description": "Interior kamar twin dengan pencahayaan hangat",
+      "alt": "Kamar Darajat Pass dengan dua tempat tidur terpisah"
     },
-    "warmPool": {
+    "resortGardens": {
+      "categoryLabel": "Pemandangan",
+      "title": "Taman di Lereng Darajat",
+      "caption": "Taman dan Bangunan di Lereng Darajat",
+      "description": "Pemandangan area resor dari atas",
+      "alt": "Taman bertingkat dan bangunan Darajat Pass di lereng bukit"
+    },
+    "doubleRoom": {
+      "categoryLabel": "Kamar",
+      "title": "Kamar Double Darajat Pass",
+      "caption": "Kamar dengan Tempat Tidur Double",
+      "description": "Suasana nyaman untuk beristirahat",
+      "alt": "Kamar Darajat Pass dengan tempat tidur double dan jendela besar"
+    },
+    "nightPool": {
       "categoryLabel": "Kolam Air Hangat",
-      "title": "Kolam Air Hangat Alami 24 Jam",
-      "caption": "Kolam Rendam Sumber Air Belerang Alami",
-      "description": "Suhu Hangat Stabil Tanpa Kaporit",
-      "alt": "Kolam rendam air hangat dengan uap alami dan panorama lembah"
+      "title": "Kolam Darajat pada Malam Hari",
+      "caption": "Suasana Kolam pada Malam Hari",
+      "description": "Pemandangan kolam setelah matahari terbenam",
+      "alt": "Kolam renang Darajat Pass dengan pencahayaan malam"
     },
-    "roastGoat": {
-      "categoryLabel": "Dining",
-      "title": "Kambing Guling Utuh Tradisional Darajat",
-      "caption": "Kambing Guling Gurih Bumbu Rempah",
-      "description": "Disiapkan segar di pelataran terbuka dengan suasana api unggun malam pegunungan.",
-      "alt": "Kambing guling tradisional disiapkan oleh chef di area panggang terbuka"
+    "rainbowSlide": {
+      "categoryLabel": "Aktivitas",
+      "title": "Rainbow Slide Darajat Pass",
+      "caption": "Bermain di Rainbow Slide",
+      "description": "Seluncuran warna-warni di tengah taman Darajat",
+      "alt": "Seluncuran Rainbow Slide warna-warni di Darajat Pass"
     },
-    "satayGrill": {
-      "categoryLabel": "Dining",
-      "title": "Sate Bakar Arang & Sambal Pasirwangi",
-      "caption": "Sate Ayam & Daging Bakar Arang",
-      "alt": "Sate ayam dan daging dipanggang di atas arang"
+    "flyingFox": {
+      "categoryLabel": "Aktivitas",
+      "title": "Flying Fox Darajat Pass",
+      "caption": "Meluncur dengan Flying Fox",
+      "alt": "Pengunjung bermain flying fox di atas area wisata Darajat Pass"
     },
-    "celebration": {
-      "categoryLabel": "Family & Experience",
-      "title": "Dekorasi Kamar Romantis & Ulang Tahun",
-      "caption": "Paket Dekorasi Spesial Kamar",
-      "alt": "Dekorasi perayaan di kamar hotel dengan pencahayaan hangat"
+    "atv": {
+      "categoryLabel": "Aktivitas",
+      "title": "ATV Darajat Pass",
+      "caption": "Jelajahi Darajat dengan ATV",
+      "alt": "Pengunjung mengendarai ATV di kawasan Darajat"
     }
   },
   "culinarySection": {
-    "leadBadge": "Live Cooking",
-    "bbqBadge": "BBQ & Grill",
-    "celebrationBadge": "Celebration",
-    "eyebrow": "CITA RASA & MOMEN SPESIAL",
-    "title": "Kehangatan Kuliner & Perayaan Keluarga",
-    "description": "Dari gurihnya hidangan kambing guling tradisional hingga dekorasi kejutan manis di dalam kamar."
+    "leadBadge": "Rainbow Slide",
+    "bbqBadge": "Flying Fox",
+    "celebrationBadge": "ATV",
+    "eyebrow": "JELAJAHI DARAJAT",
+    "title": "Aktivitas Seru di Darajat Pass",
+    "description": "Lihat Rainbow Slide, Flying Fox, dan ATV yang melengkapi pengalaman liburan di Darajat."
   },
   "experienceSection": {
     "eyebrow": "DARAJAT PASS EXPERIENCES",
     "title": "Momen yang Layak Diingat",
-    "description": "Lengkapi waktu bersama keluarga dengan pilihan dining dan celebration experience selama menginap di tengah udara sejuk Pasirwangi.",
+    "description": "Nikmati wahana dan suasana pegunungan bersama keluarga selama berada di Darajat Pass.",
     "button": "Lihat Experiences",
-    "note": "Tersedia Kambing Guling & Live BBQ",
-    "imageAlt": "Santap BBQ bersama keluarga di area terbuka resor"
+    "note": "Rainbow Slide, Flying Fox & ATV",
+    "imageAlt": "Wahana Rainbow Slide warna-warni di Darajat Pass"
   },
   "bookingSection": {
     "eyebrow": "RESERVASI LANGSUNG",

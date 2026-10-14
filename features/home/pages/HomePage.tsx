@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, BedDouble, ChevronLeft, ChevronRight, MapPin, Mountain, UsersRound, Waves } from "lucide-react";
+import { ArrowRight, BedDouble, BriefcaseMedical, ChevronLeft, ChevronRight, House, MapPin, MoonStar, Mountain, ShowerHead, SquareParking, UsersRound, Waves, Wifi } from "lucide-react";
 import { navigateWithSkeleton } from "@/components/NavigationSkeleton";
 import { formatRoomPrice } from "@/features/rooms/constants/rooms-data";
 import StayDateRangePicker from "@/features/rooms/components/StayDateRangePicker";
@@ -16,6 +16,14 @@ import { darajatCopy } from "../constants/darajat-copy";
 import { darajatMedia } from "../constants/darajat-media";
 import en from "../locales/en.json";
 import id from "../locales/id.json";
+
+const activityImages = [
+  "/images/hero/darajat-pass-hero-02.png",
+  "/images/tourism/atv-darajat.webp",
+  "/images/hero/darajat-pass-hero-03.png",
+];
+
+const amenityIcons = [Wifi, SquareParking, MoonStar, House, ShowerHead, BriefcaseMedical];
 
 function jakartaToday() {
   const parts = new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Jakarta", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(new Date());
@@ -220,12 +228,27 @@ export default function Home() {
           </div>
         </section>
         <section className="dp-activities dp-container dp-section" id="experiences">
-          <div className="dp-section-heading"><div><p className="dp-kicker">{copy.activityLabel}</p><h2>{copy.activityTitle}</h2></div></div>
-          <div className="dp-activity-list">{copy.activities.map((activity, i) => <article key={activity.tag}>
-            <span className="dp-activity-number">0{i + 1}</span><div><p className="dp-kicker">{activity.tag}</p><h3>{activity.title}</h3></div><p className="dp-body">{activity.body}</p>
-            <a className="dp-text-link" href="https://darajatpass.com/kontak/" target="_blank" rel="noreferrer">{activity.action}<ArrowRight size={18} /></a>
-          </article>)}</div>
-          <div className="dp-amenities" id="facilities"><p>{copy.amenitiesLabel}</p><ul>{copy.amenities.map(item => <li key={item}>{item}</li>)}</ul></div>
+          <div className="dp-activity-heading">
+            <div><p className="dp-kicker">{copy.activityLabel}</p><h2>{copy.activityTitle}</h2></div>
+            <p className="dp-body">{copy.activityIntro}</p>
+          </div>
+          <div className="dp-activity-showcase">
+            <figure className="dp-activity-feature">
+              <Image src="/images/darajat-welcome.webp" alt={copy.activityFeatureAlt} fill sizes="(max-width: 780px) 100vw, 42vw" />
+              <figcaption><span>{copy.activityFeatureLabel}</span><strong>{copy.activityFeatureTitle}</strong><p>{copy.activityFeatureBody}</p></figcaption>
+            </figure>
+            <div className="dp-activity-cards">{copy.activities.map((activity, i) => <article className={i === 0 ? "is-featured" : ""} key={activity.tag}>
+              <div className="dp-activity-card-photo"><Image src={activityImages[i]} alt={activity.imageAlt} fill sizes="(max-width: 620px) 80px, 110px" /></div>
+              <p className="dp-kicker">{activity.tag}</p>
+              <h3>{activity.title}</h3>
+              <p className="dp-body">{activity.body}</p>
+              <span className="dp-activity-cta">{activity.action}<ArrowRight size={18} /></span>
+            </article>)}</div>
+          </div>
+          <div className="dp-amenities" id="facilities"><div className="dp-amenities-heading"><p>{copy.amenitiesLabel}</p><Link href="/facilities" className="dp-amenities-link">{copy.amenitiesLink}<ArrowRight size={17} aria-hidden="true" /></Link></div><ul>{copy.amenities.map((item, index) => {
+            const Icon = amenityIcons[index];
+            return <li key={item}><Icon size={20} strokeWidth={1.8} aria-hidden="true" /><span>{item}</span></li>;
+          })}</ul></div>
         </section>
         <section className="dp-gallery dp-section" id="gallery"><div className="dp-container">
           <div className="dp-gallery-heading">
