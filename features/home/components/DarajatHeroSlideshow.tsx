@@ -43,7 +43,7 @@ export function DarajatHeroSlideshow() {
           alt=""
           fill
           priority={index === 0}
-          sizes="100vw"
+          sizes="(max-width: 620px) 100vh, 100vw"
         />
       ))}
     </div>

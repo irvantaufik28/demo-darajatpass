@@ -267,7 +267,9 @@
   .dp-home .language-pill svg { display: none; }
   .dp-home .dp-hero-copy { padding-block: 0 18px; }
   .dp-home .hero.dp-hero h1 { font-size: clamp(43px, 10vw, 61px); }
+  .dp-home .dp-hero-slideshow { bottom: auto; height: 56vh; height: 56svh; }
   .dp-home .dp-hero-slide { object-position: 55% center; }
+  .dp-home .dp-hero .hero-shade { background: linear-gradient(180deg, rgba(9,28,20,.4) 0%, rgba(9,28,20,.55) 32%, #173f33 56svh); }
   .dp-home .hero-controls { top: 88px; gap: 8px; }
   .dp-home .hero-controls > button { width: 44px; height: 44px; }
   .dp-home .hero .booking-section { margin-bottom: 20px; }
